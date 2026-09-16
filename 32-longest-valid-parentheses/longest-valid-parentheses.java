@@ -13,7 +13,7 @@ class Solution {
             } else {
                 stack.pop();
                 if (stack.isEmpty()) {
-                    
+
                     stack.push(i);
                 } else {
                     max_len = Math.max(max_len, i - stack.peek());
