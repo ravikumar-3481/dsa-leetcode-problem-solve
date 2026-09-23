@@ -4,9 +4,7 @@ class Solution:
         bestBuy = prices[0]
 
         for price in prices :
-            if price < bestBuy:
-                bestBuy = price
-            else:
+            if price > bestBuy:
                 maxProfit = max(maxProfit, price - bestBuy)
             bestBuy = min(bestBuy, price)
         return maxProfit 
